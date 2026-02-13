@@ -9,5 +9,7 @@ dependencies = [
 "pandas",
 "scikit-learn",
 "fastapi",
-"uvicorn[standard]"
+"uvicorn[standard]",
+"ipykernel",
+"matplotlib"
 ]
