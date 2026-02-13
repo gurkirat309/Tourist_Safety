@@ -5,11 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-"numpy",
-"pandas",
-"scikit-learn",
-"fastapi",
-"uvicorn[standard]",
-"ipykernel",
-"matplotlib"
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "fastapi",
+    "uvicorn[standard]",
+    "ipykernel",
+    "matplotlib",
+    "torch"
 ]
+
+[tool.setuptools.packages.find]
+include = ["models*"]
+exclude = ["data*", "notebook*"]
